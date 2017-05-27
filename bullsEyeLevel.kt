@@ -1,5 +1,6 @@
 //mini android app using phone's accelerometer
-//bull's eye level gauge
+//bull's eye level gauge with cs109 library
+//
 import org.otfried.cs109.Context
 import org.otfried.cs109.MiniApp
 import org.otfried.cs109.Canvas
@@ -54,11 +55,5 @@ class Main(val ctx: Context) : MiniApp {
 	
 	canvas.setColor(Color.BLUE)
 	canvas.drawCircle(x_center + inX, y_center + inY, 60.0, DrawStyle.FILL )
-	
-    //canvas.setFont(48.0)
-    //for (i in 0..2)
-      //canvas.drawText("%.3f".format(gravity[i]), x_center, 80.0 + i * 60.0, TextAlign.CENTER)
-    //val norm = Math.sqrt(sq(gravity[0]) + sq(gravity[1]) + sq(gravity[2]))
-    //canvas.drawText("%.3f".format(n), x_center, 300.0, TextAlign.CENTER)
   }
 }
